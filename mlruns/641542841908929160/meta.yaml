@@ -1,6 +1,0 @@
-artifact_location: mlflow-artifacts:/641542841908929160
-creation_time: 1732967682283
-experiment_id: '641542841908929160'
-last_update_time: 1732967682283
-lifecycle_stage: active
-name: Check localhost connection
