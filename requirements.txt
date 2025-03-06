@@ -4,6 +4,6 @@ numpy
 pymongo
 certifi
 
+pymongo[srv]==3.6
 # used for when tou want to develop some program into pypi package
-# do this at last
--e .
+## -e .
