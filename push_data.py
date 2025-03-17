@@ -29,6 +29,7 @@ class NetworkDataExtract():
     def csv_to_json_convertor(self, file_path):
         try:
             data = pd.read_csv(file_path)
+            print(data.head())
             data.reset_index(drop=True, inplace=True)
             records = list(json.loads(data.T.to_json()).values())
             return records
@@ -57,6 +58,6 @@ if __name__ == '__main__':
     Collection = "NetworkData"
     networkobj = NetworkDataExtract()
     records = networkobj.csv_to_json_convertor(file_path=FILE_PATH)
-    print(records)
+    #print(records)
     no_of_records = networkobj.insert_data_mongodb(records, DATABASE, Collection)
-    print(no_of_records)
+    #print(no_of_records)
