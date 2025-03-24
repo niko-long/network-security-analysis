@@ -4,6 +4,9 @@ numpy
 pymongo
 certifi
 scikit-learn
+pyaml
+dill
+
 
 pymongo[srv]==3.6
 # used for when tou want to develop some program into pypi package
