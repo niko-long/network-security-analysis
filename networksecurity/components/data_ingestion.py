@@ -50,7 +50,7 @@ class DataIngestion:
             df = pd.DataFrame(list(collection.find()))
             print(f"Fetched data from MongoDB collection: {collection_name}")
             print(f"Dataframe shape: {df.shape}")
-            print(f"First few rows:\n{df.head()}")
+            #print(f"First few rows:\n{df.head()}")
 
             df = pd.DataFrame(list(collection.find()))
             if "_id" in df.columns:
